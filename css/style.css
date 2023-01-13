@@ -15,14 +15,10 @@ html{
   margin: 0 auto;
 }
 
-section{
-  height: 150vh;
-}
-
 /* HEADER */
 
 header{
-  background-color: rgba(0, 0, 0, .8);
+  background-color: #fafafa;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -30,8 +26,6 @@ header{
 }
 
 header > .container{
-  position: sticky;
-  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,13 +48,13 @@ header > .container{
   flex-direction: column;
   opacity: 0;
   pointer-events: none;
-  background-color: rgba(0, 0, 0, .99);
+  background-color: #fafafa;
 }
 
 .menu a{
   text-align: center;
   text-decoration: none;
-  color: #fafafa;
+  color: #000;
   padding: 2rem;
   transition: all .15s ease;
   font-size: 1.2rem;
@@ -78,10 +72,10 @@ header > .container{
 /* Hero */
 
 .hero-video{
-  position: absolute;
+  position: relative;
   top: 0;
   z-index: 998;
-  height: 67vh;
+  height: 65vh;
   width: 100%;
 }
 
@@ -103,6 +97,63 @@ header > .container{
 
 .hero-video-text b{
   color: lightblue;
+}
+
+/* Cards options */
+
+.options{
+  background-color: #fafafa;
+  padding: 80px 0;
+
+}
+
+.cards{
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.cards a{
+  text-decoration: none;
+  color: #000;
+}
+
+.card{
+  width: 330px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F9FC;
+  box-shadow: 0px 8px 8px rgb(178 192 223 / 24%);
+  border-radius: .5rem;
+  border: 1px solid #ECEFF7;
+  padding: 1rem;
+  transition: all .12s ease;
+}
+
+.card > * {
+  margin: .8rem;
+}
+
+.card:hover{
+  background-color: #fff;
+}
+
+.icon{
+  width: 40px;
+}
+
+/* Main */
+
+.cars-onsell{
+  padding: 80px 0;
+  background-color: #eaecf1;
 }
 
 .is-active{
