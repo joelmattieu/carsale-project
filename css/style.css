@@ -107,42 +107,33 @@ header > .container{
 
 }
 
-.cards{
-  height: 300px;
-  margin: 0 auto;
+.options > .container{
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  align-content: space-around;
-}
-
-.cards a{
-  text-decoration: none;
-  color: #000;
 }
 
 .card{
-  width: 330px;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 80%;
+  max-width: 300px;
+  height: 100px;
+  padding: 1rem;
+  margin: .5rem .5rem;
+  border-radius: 8px;
   background-color: #F8F9FC;
   box-shadow: 0px 8px 8px rgb(178 192 223 / 24%);
-  border-radius: .5rem;
-  border: 1px solid #ECEFF7;
-  padding: 1rem;
-  transition: all .12s ease;
-}
-
-.card > * {
-  margin: .8rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .card:hover{
   background-color: #fff;
+}
+
+.texto{
+  margin-left: 1rem;
 }
 
 .icon{
@@ -150,11 +141,6 @@ header > .container{
 }
 
 /* Main */
-
-.cars-onsell{
-  padding: 80px 0;
-  background-color: #eaecf1;
-}
 
 .is-active{
   opacity: 1;
