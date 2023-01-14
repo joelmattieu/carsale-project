@@ -13,6 +13,8 @@
   <title>CarSale</title>
 </head>
 <body>
+
+  <!-- HEADER -->
   <header role="banner">
     <div class="container">
       <div class="logo">
@@ -30,10 +32,14 @@
       </nav>
     </div>
   </header>
+
+  <!-- HERO IMAGE -->
   <section class="hero-video">
     <video src="./assets/hero-video.mp4" autoplay loop muted></video>
     <h2 class="hero-video-text">FIND YOUR NEW <br><b>CAR</b></h2>
   </section>
+
+  <!-- OPTIONS SECTION -->
   <section class="options">
     <div class="container">
       <div class="card">
@@ -64,10 +70,35 @@
         </div>
       </div>
     </div>
+
+    <!-- CARS ON SELL SECTION -->
   </section>
   <section class="cars-onsell">
-
+    <div class="container" id="box-cars">     
+    </div>
   </section>
+
+
+  <!-- <footer>
+    <div class="container">
+      <h4>Made by Joel Mattieu</h4>
+      <div class="social-media">
+        
+      </div>
+    </div>
+  </footer> -->
+
+  <!-- TEMPLATE CARDS CARS -->
+<template id="template-cars">
+  <div class="box-cars">
+    <div class="info">
+      <h3 class="car-name"></h3>
+      <p class="year"></p>
+      <p class="km"></p>
+      <p class="prize"></p>
+    </div>
+  </div>
+</template>
 
   <script src="./js/index.js" type="module"></script>
 </body>

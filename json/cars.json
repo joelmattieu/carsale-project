@@ -1,0 +1,47 @@
+{
+  "cars":[
+    {
+      "id": 1,
+      "brand": "Renault",
+      "year": 2006,
+      "km": 160000,
+      "prize": 3700
+    },
+    {
+      "id": 2,
+      "brand": "Peugeot",
+      "year": 2004,
+      "km": 200000,
+      "prize": 5000
+    },
+    {
+      "id": 3,
+      "brand": "Fiat",
+      "year": 2010,
+      "km": 520000,
+      "prize": 6500
+    },
+    {
+      "id": 4,
+      "brand": "Audi",
+      "year": 2016,
+      "km": 30000,
+      "prize": 10000
+    },
+    {
+      "id": 5,
+      "brand": "Citroen",
+      "year": 2009,
+      "km": 146000,
+      "prize": 7600
+    },
+    {
+      "id": 6,
+      "brand": "Ford",
+      "year": 2020,
+      "km": 40000,
+      "prize": 8000
+    }
+
+  ]
+}
