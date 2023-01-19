@@ -58,6 +58,7 @@ header > .container {
   padding: 2rem;
   transition: all 0.15s ease;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .menu a:first-child {
@@ -126,6 +127,7 @@ header > .container {
   display: flex;
   align-items: center;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .card:hover {
@@ -207,6 +209,7 @@ header > .container {
   height: 30px;
   border: none;
   padding: 0.5rem;
+  border-bottom: 2.5px solid lightblue;
 }
 
 .box-addcar form input[type="submit"] {
@@ -215,10 +218,11 @@ header > .container {
   background-color: lightblue;
   border-radius: 8px;
   cursor: pointer;
+  transition: all .05s ease-in;
 }
 
 .box-addcar form input[type="submit"]:hover {
-  opacity: 0.8;
+  opacity: .8;
 }
 
 .box-addcar form input:focus {
@@ -259,11 +263,103 @@ footer .container > * {
   opacity: 0.5;
 }
 
+/* CONTACT FORM */
+
+.background-form{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .85);
+  box-shadow: 0px 8px 8px rgba(42, 45, 52, 0.24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .15s ease-in;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.close{
+  position: absolute;
+  top: 5vh;
+  right: 8vh;
+  cursor: pointer;
+}
+
+.close svg{
+  fill: #f8f9fc;
+  width: 40px;
+  height: 40px;
+}
+
+.close svg:hover{
+  opacity: .8;
+}
+
+.form-card{
+  background-color: #f8f9fc;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 550px;
+}
+
+.form-card > h3{
+  padding: 1rem;
+  text-align: center;
+  cursor: default;
+}
+
+.form-card form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-card form > *{
+  margin: .5rem;
+}
+
+.form-card form input{
+  padding: .3rem;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-bottom: 2.5px solid lightblue;
+}
+
+.form-card form textarea{
+  resize: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-bottom: 2.5px solid lightblue;
+}
+
+.form-card form input[type=submit]{
+  max-width: 300px;
+  background-color: lightblue;
+  border-radius: 8px;
+  box-shadow: 0px 8px 8px rgba(157, 179, 227, 0.24);
+  transition: .05s ease-in;
+  cursor: pointer;
+}
+
+.form-card form input[type=submit]:hover{
+  opacity: .8;
+}
+
 /* Utilities */
 .is-active {
   opacity: 1;
   pointer-events: all;
 }
+
+
 
 @media screen and (min-width: 768px) {
   header {
@@ -313,5 +409,6 @@ footer .container > * {
 
   footer > .container {
     flex-direction: row;
+  
   }
 }

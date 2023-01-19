@@ -12,8 +12,8 @@ export default async function getAll() {
     json.cars.forEach((el) => {
       $template.querySelector(".car-name").textContent = el.brand;
       $template.querySelector(".year").textContent = `Year: ${el.year}`;
-      $template.querySelector(".km").textContent = `KM: ${el.km}`;
-      $template.querySelector(".prize").textContent = `$${el.prize}`;
+      $template.querySelector(".price").textContent = `$${el.price}`;
+      $template.querySelector(".phone").textContent = `Phone: ${el.phone}`;
 
       let $clone = document.importNode($template, true);
       $fragment.appendChild($clone);

@@ -3,43 +3,43 @@
     {
       "brand": "Renault",
       "year": 2006,
-      "km": 160000,
-      "prize": 3700,
+      "price": 3700,
+      "phone": "54 11 6875-4391",
       "id": 1
     },
     {
       "brand": "Peugeot",
       "year": 2004,
-      "km": 200000,
-      "prize": 5000,
+      "price": 5000,
+      "phone": "54 11 2350-4578",
       "id": 2
     },
     {
       "brand": "Fiat",
       "year": 2010,
-      "km": 520000,
-      "prize": 6500,
+      "price": 6500,
+      "phone": "54 11 5479-1035",
       "id": 3
     },
     {
       "brand": "Audi",
       "year": 2016,
-      "km": 30000,
-      "prize": 10000,
+      "price": 10000,
+      "phone": "54 11 3934-9356",
       "id": 4
     },
     {
       "brand": "Citroen",
       "year": 2009,
-      "km": 146000,
-      "prize": 7600,
+      "price": 7600,
+      "phone": "54 11 2334-3271",
       "id": 5
     },
     {
       "brand": "Ford",
       "year": 2020,
-      "km": 40000,
-      "prize": 8000,
+      "price": 8000,
+      "phone": "54 011 2383-2466",
       "id": 6
     }
   ]

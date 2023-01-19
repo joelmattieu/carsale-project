@@ -14,8 +14,8 @@ export default async function postAll() {
           body: JSON.stringify({
             brand: e.target.brand.value,
             year: e.target.year.value,
-            km: e.target.km.value,
-            prize: e.target.prize.value,
+            price: e.target.price.value,
+            phone: e.target.phone.value,
           }),
         });
 
