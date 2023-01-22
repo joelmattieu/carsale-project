@@ -218,11 +218,11 @@ header > .container {
   background-color: lightblue;
   border-radius: 8px;
   cursor: pointer;
-  transition: all .05s ease-in;
+  transition: all 0.05s ease-in;
 }
 
 .box-addcar form input[type="submit"]:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .box-addcar form input:focus {
@@ -265,41 +265,41 @@ footer .container > * {
 
 /* CONTACT FORM */
 
-.background-form{
+.background-form {
   position: fixed;
   z-index: 999;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, .85);
+  background-color: rgba(0, 0, 0, 0.85);
   box-shadow: 0px 8px 8px rgba(42, 45, 52, 0.24);
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .15s ease-in;
+  transition: all 0.15s ease-in;
   opacity: 0;
   pointer-events: none;
 }
 
-.close{
+.close {
   position: absolute;
   top: 5vh;
   right: 8vh;
   cursor: pointer;
 }
 
-.close svg{
+.close svg {
   fill: #f8f9fc;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 }
 
-.close svg:hover{
-  opacity: .8;
+.close svg:hover {
+  opacity: 0.8;
 }
 
-.form-card{
+.form-card {
   background-color: #f8f9fc;
   padding: 1rem 2rem;
   border-radius: 8px;
@@ -307,50 +307,49 @@ footer .container > * {
   max-width: 550px;
 }
 
-.form-card > h3{
+.form-card > h3 {
   padding: 1rem;
   text-align: center;
   cursor: default;
 }
 
-.form-card form{
+.form-card form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.form-card form > *{
-  margin: .5rem;
-}
-
-.form-card form input{
-  padding: .3rem;
+.form-card form > * {
+  margin: 0.5rem auto;
+  display: block;
+  padding: 0.5rem;
   border: none;
   outline: none;
+}
+
+.form-card form input {
   width: 100%;
   border-bottom: 2.5px solid lightblue;
 }
 
-.form-card form textarea{
+.form-card form textarea {
   resize: none;
-  border: none;
-  outline: none;
   width: 100%;
   border-bottom: 2.5px solid lightblue;
 }
 
-.form-card form input[type=submit]{
+.form-card form input[type="submit"] {
   max-width: 300px;
   background-color: lightblue;
   border-radius: 8px;
   box-shadow: 0px 8px 8px rgba(157, 179, 227, 0.24);
-  transition: .05s ease-in;
+  transition: 0.05s ease-in;
   cursor: pointer;
 }
 
-.form-card form input[type=submit]:hover{
-  opacity: .8;
+.form-card form input[type="submit"]:hover {
+  opacity: 0.8;
 }
 
 /* Utilities */
@@ -358,8 +357,6 @@ footer .container > * {
   opacity: 1;
   pointer-events: all;
 }
-
-
 
 @media screen and (min-width: 768px) {
   header {
@@ -409,6 +406,5 @@ footer .container > * {
 
   footer > .container {
     flex-direction: row;
-  
   }
 }

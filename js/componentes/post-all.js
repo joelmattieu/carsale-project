@@ -22,7 +22,6 @@ export default async function postAll() {
         if (!res.ok) throw { status: res.status, statusText: res.statusText };
 
         location.reload();
-        
       } catch (error) {
         let message = error.statusText || "Error ocurred";
         $form.insertAdjacentHTML(

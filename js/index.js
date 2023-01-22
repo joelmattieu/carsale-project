@@ -4,9 +4,9 @@ import postAll from "./componentes/post-all.js";
 import pauseVideo from "./componentes/pause-video.js";
 import showContact from "./componentes/show-form.js";
 
-document.addEventListener("DOMContentLoaded", e => {
+document.addEventListener("DOMContentLoaded", (e) => {
   hamburgerMenu();
-  pauseVideo()
+  pauseVideo();
   getAll();
   postAll();
   showContact();

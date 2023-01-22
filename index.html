@@ -135,18 +135,51 @@
     </div>
     </footer>
 
-    <div class="background-form">
+    <div class="background-form" id="background-form">
       <div class="close">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.41,12l6.3-6.29a1,1,0,1,0-1.42-1.42L12,10.59,5.71,4.29A1,1,0,0,0,4.29,5.71L10.59,12l-6.3,6.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l6.29,6.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z"/></svg>
       </div>
       <div class="form-card">
         <h3>Contact Us</h3>
-        <form action="" autocomplete="off">
-          <input type="text" name="nombre" id="nombre" placeholder="Full Name">
-          <input type="email" name="email" id="email" placeholder="Email" autocomplete="email">
-          <input type="text" name="asunto" id="ausnto" placeholder="Subject">
-          <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Write your message here..."></textarea>
+        <form class="contact-form" id="contact-form" action="https://formsubmit.co/joelmattieu2016@gmail.com" method="post" target="_blank" autocomplete="off">
+
+          <input type="text" 
+          name="nombre" 
+          id="nombre" 
+          placeholder="Full Name"
+          title="Name only accepts letters and blank spaces"
+          pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]{1,50}$"
+          required>
+
+          <input 
+          type="email" 
+          name="email" 
+          id="email" 
+          placeholder="Email" 
+          autocomplete="email"
+          title="Wrong email"
+          pattern="^[A-Za-z0-9]+(\.[A-Za-z0-9]+|-[A-Za-z0-9]+|_[A-Za-z0-9]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*(\.[A-Za-z]{2,15})$"
+          required>
+          
+          <input type="text" 
+          name="asunto" 
+          id="asunto" 
+          placeholder="Subject"
+          title="Subject is required"
+          required>
+          
+          <textarea 
+          name="mensaje" 
+          id="mensaje" 
+          cols="30" 
+          rows="5" 
+          placeholder="Write your message here..."
+          title="Your message must not exceed 255 characters"
+          data-pattern="^(\n|.){1,255}$"
+          required></textarea>
+
           <input type="submit" value="Send">
+
         </form>
       </div>
     </div>
