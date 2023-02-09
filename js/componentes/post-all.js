@@ -1,4 +1,4 @@
-const $form = document.getElementById("form");
+const $form = document.getElementById("form-car");
 
 export default async function postAll() {
   document.addEventListener("submit", async (e) => {

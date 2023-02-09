@@ -196,37 +196,14 @@ header > .container {
   border-radius: 8px;
 }
 
-.box-addcar form {
+.form-car{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-
-.box-addcar form input {
-  width: 90%;
-  margin: 0.5rem;
-  height: 30px;
-  border: none;
-  padding: 0.5rem;
-  border-bottom: 2.5px solid lightblue;
-}
-
-.box-addcar form input[type="submit"] {
-  border: none;
-  max-width: 250px;
-  background-color: lightblue;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.05s ease-in;
-}
-
-.box-addcar form input[type="submit"]:hover {
-  opacity: 0.8;
-}
-
-.box-addcar form input:focus {
-  outline: none;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  max-width: 280px;
 }
 
 .car-image {
@@ -299,58 +276,74 @@ footer .container > * {
   opacity: 0.8;
 }
 
-.form-card {
-  background-color: #f8f9fc;
+.form-contact {
+  background-color: #fff;
   padding: 1rem 2rem;
   border-radius: 8px;
   width: 80%;
   max-width: 550px;
-}
-
-.form-card > h3 {
-  padding: 1rem;
-  text-align: center;
-  cursor: default;
-}
-
-.form-card form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-.form-card form > * {
-  margin: 0.5rem auto;
+.form-contact h3{
+  cursor: default;
+  margin: 12px;
+}
+
+.form-box{
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.form-box label{
   display: block;
-  padding: 0.5rem;
-  border: none;
-  outline: none;
-}
-
-.form-card form input {
   width: 100%;
-  border-bottom: 2.5px solid lightblue;
+  font-size: 14px;
+  color: #777;
 }
 
-.form-card form textarea {
+.form-box input,
+.form-box textarea{
+  width: 100%;
+  border-radius: 4px;
+  border: 2px solid #f0f0f0;
+  padding: 4px;
+  font-size: 14px;
   resize: none;
-  width: 100%;
-  border-bottom: 2.5px solid lightblue;
 }
 
-.form-card form input[type="submit"] {
-  max-width: 300px;
-  background-color: lightblue;
-  border-radius: 8px;
-  box-shadow: 0px 8px 8px rgba(157, 179, 227, 0.24);
-  transition: 0.05s ease-in;
+.btn-form{
+  width: 50%;
+  border: none;
+  background-color: lightskyblue;
+  border-radius: 4px;
+  padding: 5px;
   cursor: pointer;
 }
 
-.form-card form input[type="submit"]:hover {
-  opacity: 0.8;
+.btn-form:hover{
+  background-color: lightblue;
 }
+
+.error-msg{
+  display: block;
+  font-size: 14px;
+  color: #cb3234;
+  cursor: default;
+}
+
+.form-contact-error{
+  outline: 1.5px solid #cb3234;
+}
+
+.form-contact-success{
+  outline: 1.5px solid #317f43;
+}
+
 
 /* Utilities */
 .is-active {
